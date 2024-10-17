@@ -10,66 +10,73 @@
     </head>
     <body>
         <div class="conatiner">
-            <div>
+            <header>
                 <h1> Progress Tracker</h1>
                 <h2>This weeks progress</h2>
-            </div>
-            <div class="display">
-            
-                <div class="tracker">
-                    <div>
-                        <h3 class="bubble-lable">Screen time</h3>
-                        <div class="tracker-bubble"></div>
+            </header>
+            <main>
+                <section class="display">
+                    <div class="tracker">
+                        <div>
+                            <h3 class="bubble-lable">Screen time</h3>
+                            <div class="tracker-bubble"></div>
+                        </div>
+
+                        <div>
+                            <h3 class="bubble-lable">Videos</h3>
+                            <div class="tracker-bubble"></div>
+                        </div>
+
+                        <div>
+                            <h3 class="bubble-lable">Projects</h3>
+                            <div class="tracker-bubble"></div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="bubble-lable">Videos</h3>
-                        <div class="tracker-bubble"></div>
+                </section>
+
+                <section>
+                    <div class="timer">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>00:00:00</spans>
+                        <i class="fa-solid fa-play"></i>
+                    </div> 
+                </section>
+
+                <seciton>
+                    <div class="reward-btn">
+                        <button id="watched-video-btn">⏩</button>
                     </div>
-                    <div>
-                        <h3 class="bubble-lable">Projects</h3>
-                        <div class="tracker-bubble"></div>
+
+                    <div class="reward-btn">
+                        <button>🏅</button>
                     </div>
-                </div>
-            </div>
+                </seciton>
 
-            <div class="timer">
-                <i class="fa-regular fa-clock"></i>
-                <span>00:00:00</spans>
-                <i class="fa-solid fa-play"></i>
-            </div> 
-    
-            <div class="reward-btn">
-                <button id="watched-video-btn">⏩</button>
-            </div>
+                <section>
+                    <div>
+                        <h3 class="progress-label"> Todays progress - 12</h3>
+                        <div class="progress-display"></div>
+                    </div>
 
-            <div class="reward-btn">
-                <button>🏅</button>
-            </div>
-            
-            <div>
-                <h3 class="progress-label"> Todays progress -12</h3>
-                <div class="progress-display"></div>
-            </div>
-            <div>
-                <h3 class="progress-label"> Live Achivements -2</h3>
-                <div class="progress-display"></div>
-            </div>
-        
-    
-            <div class="watched">
-                <div>
-                    <h3 class="watched-label">Videos Watched</h3>
-                    <p class="watched-display" id="videos-watched-el">0</p>
-                </div>
+                    <div>
+                        <h3 class="progress-label"> Live Achivements - 2</h3>
+                        <div class="progress-display"></div>
+                    </div>
+                </section>
 
-                <div>
-                    <h3 class="watched-label">Hours Watched</h3>
-                    <p class="watched-display">0</p>
-                </div>
-            </div>
+                <section class="watched">
+                    <div>
+                        <h3 class="watched-label">Videos Watched</h3>
+                        <p class="watched-display" id="videos-watched-el">0</p>
+                    </div>
 
+                    <div>
+                        <h3 class="watched-label">Hours Watched</h3>
+                        <p class="watched-display">0</p>
+                    </div>
+                </section>
+            </main>
         </div>
-
 
         <script src="index.js"></script>
     </body>

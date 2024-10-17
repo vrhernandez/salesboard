@@ -1,109 +1,118 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     text-align: center;
     background: #252525;
-      
 }
-.conatiner{
-   
+
+.conatiner {
     color:white;
+    font-family: Poppins;
+
     width: 400px;
     height: 100vh;
     margin: auto;
-    color: #FFF;
-    font-family: Poppins;
-    
-    
 }
 
-h1{
-  
-padding: 15px; 
-font-size: 48px;
+/***HEADINGS***/
+h1 {
+    font-size: 48px;
 
-     
+    padding: 15px; 
 }
 
-h2{
-
-  font-size: 30px;
-  
+h2 {
+    font-size: 30px;
 }
-.tracker{
+
+/***MAIN***/
+/**TRACKED PROGRESS**/
+.tracker {
     display: flex;
     justify-content: space-around;
-   
-   
 }
-.bubble-lable{
-   
+
+.bubble-lable {
     font-family: Poppins;
     font-size: 25px;
+
     margin-bottom: 5px;
-
-
 }
-.tracker-bubble{
+
+.tracker-bubble {
     background-color: #44354A;
+
     width: 120px;
     height: 30px;
-    border-radius: 50px ;
+
+    border-radius: 50px;
     margin:auto;
-
-
 }
-.timer{
+
+/**TIMER**/
+.timer {
     display: flex;
     justify-content: center;
-    gap:5px;
-    margin:23px;
-    font-size:20px;
 
+    font-size: 20px;
+
+    gap: 5px;
+    margin: 23px;
 }
-.reward-btn{
+
+/**BUTTONS**/
+.reward-btn {
     background-color: #9E4770;
-    display: inline-block;
-    padding: 15px 35px;
-    border-radius: 10px ;
-    margin: 5px;
-   
 
+    display: inline-block;
+
+    padding: 15px 35px;
+    border-radius: 10px;
+    margin: 5px;
 }
 
-
-.progress-label{
+/**CURRENT PROGRESS**/
+.progress-label {
     font-family: Poppins;
     font-size: 20px;
+
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-.progress-display{
+.progress-display {
+    background: #44354A;
 
     height: 40px;
-    border-radius: 50px;
-    background: #44354A;
-    margin: auto;
 
+    border-radius: 50px;
+    margin: auto;
 }
-.watched{
+
+/**WATCHED SECTION**/
+.watched {
     display: flex;
     justify-content: space-between;
- 
 }
 
-.watched div{
+.watched div {
     width: 49%;
 }
 
-.watched-label{
+.watched-label {
     font-size: 20px;
+
     margin: 10px;
 }
 
-.watched-display{
-    border-radius: 50px;
-    background-color: #44354A;
+.watched-display {
     font-size: 20px;
-    margin-top: 10px;
+
+    background-color: #44354A;
+
     padding: 8px 0;
+    border-radius: 50px;
+    margin-top: 10px;
 }
