@@ -1,55 +1,58 @@
 body{
     text-align: center;
     background: #252525;
-      
+    font-family: "Poppins", sans-serif;
 }
-.conatiner{
-   
-    color:white;
+
+.container{
     width: 400px;
     height: 100vh;
     margin: auto;
     color: #FFF;
-    font-family: Poppins;
 }
 
 h1{
     padding: 15px; 
-    font-size: 48px;
+    font-size: 42px;
 }
 
 h2{
-    font-size: 30px;
-}
-
-.tracker{
-    display: flex;
-    justify-content: space-around;
-}
-
-.bubble-lable{
-    font-family: Poppins;
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: 15px;
     margin-bottom: 5px;
-
-
 }
 
-.tracker-bubble{
-    background-color: #44354A;
-    width: 120px;
-    height: 30px;
-    border-radius: 50px ;
-    margin:auto;
+h3{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.stat-bubble{
+    border-radius: 50px;
+    background: #44354A;
+    font-size: 20px;
+    margin-top: 1px;
+    padding: 4px 0;
+}
+
+.weekly-section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weekly-stat{
+    width: 100px;
 }
 
 .timer{
     display: flex;
     justify-content: center;
-    gap:5px;
-    margin:23px;
-    font-size:20px;
-
+    gap: 5px;
+    margin: 23px;
+    font-size: 20px;
 }
 
 .reward-btn{
@@ -60,41 +63,11 @@ h2{
     margin: 5px;
 }
 
-
-.progress-label{
-    font-family: Poppins;
-    font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-.progress-display{
-
-    height: 40px;
-    border-radius: 50px;
-    background: #44354A;
-    margin: auto;
-}
-
 .watched{
     display: flex;
     justify-content: space-between;
- 
 }
 
 .watched div{
     width: 49%;
-}
-
-.watched-label{
-    font-size: 20px;
-    margin: 10px;
-}
-
-.watched-display{
-    border-radius: 50px;
-    background-color: #44354A;
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 8px 0;
 }

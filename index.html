@@ -4,31 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>progress tracker</title>
-        <!-- font awesome -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="conatiner">
+        <div class="container">
             <div>
                 <h1> Progress Tracker</h1>
-                <h2>This weeks progress</h2>
+                <h2>This week's progress</h2>
             </div>
-            <div class="display">
-            
-                <div class="tracker">
-                    <div>
-                        <h3 class="bubble-lable">Screen time</h3>
-                        <div class="tracker-bubble"></div>
-                    </div>
-                    <div>
-                        <h3 class="bubble-lable">Videos</h3>
-                        <div class="tracker-bubble"></div>
-                    </div>
-                    <div>
-                        <h3 class="bubble-lable">Projects</h3>
-                        <div class="tracker-bubble"></div>
-                    </div>
+            <div class="weekly-section">
+                <div class="weekly-stat">
+                    <h3>Screen time</h3>
+                    <p class="stat-bubble">0</p>
+                </div>
+                <div class="weekly-stat">
+                    <h3>Videos</h3>
+                    <p class="stat-bubble">0</p>
+                </div>
+                <div class="weekly-stat">
+                    <h3>Projects</h3>
+                    <p class="stat-bubble">0</p>
                 </div>
             </div>
 
@@ -47,24 +46,23 @@
             </div>
             
             <div>
-                <h3 class="progress-label"> Todays progress -12</h3>
-                <div class="progress-display"></div>
+                <h2 class="progress-label"> Today's progress -12</h2>
+                <p class="stat-bubble">no progress yet.</p>
             </div>
             <div>
-                <h3 class="progress-label"> Live Achivements -2</h3>
-                <div class="progress-display"></div>
+                <h2 class="progress-label"> Live Achievements -2</h2>
+                <p class="stat-bubble">no achievements yet.</p>
             </div>
         
-    
             <div class="watched">
                 <div>
-                    <h3 class="watched-label">Videos Watched</h3>
-                    <p class="watched-display" id="videos-watched-el">0</p>
+                    <h2 class="watched-label">Videos Watched</h2>
+                    <p class="stat-bubble" id="videos-watched-el">0</p>
                 </div>
 
                 <div>
-                    <h3 class="watched-label">Hours Watched</h3>
-                    <p class="watched-display">0</p>
+                    <h2 class="watched-label">Hours Watched</h2>
+                    <p class="stat-bubble">0</p>
                 </div>
             </div>
 
