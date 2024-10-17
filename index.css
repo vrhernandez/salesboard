@@ -28,6 +28,12 @@ h2{
   font-size: 30px;
   
 }
+
+.bubble{
+    border-radius: 50px;
+    background: #44354A;
+}
+
 .tracker{
     display: flex;
     justify-content: space-around;
@@ -43,10 +49,8 @@ h2{
 
 }
 .tracker-bubble{
-    background-color: #44354A;
     width: 120px;
     height: 30px;
-    border-radius: 50px ;
     margin:auto;
 
 
@@ -78,12 +82,14 @@ h2{
 }
 
 .progress-display{
-
     height: 40px;
-    border-radius: 50px;
-    background: #44354A;
     margin: auto;
+}
 
+.watched-display{
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 8px 0;
 }
 .watched{
     display: flex;
@@ -98,12 +104,4 @@ h2{
 .watched-label{
     font-size: 20px;
     margin: 10px;
-}
-
-.watched-display{
-    border-radius: 50px;
-    background-color: #44354A;
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 8px 0;
 }
