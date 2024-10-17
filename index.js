@@ -1,17 +1,11 @@
 // temp data, will be added to local storage
 const watchedVideos = []
-let watchCount = 0
+let totalWatched = 0
 
-const watchCountEl = document.getElementById("watch-count-el")
+const watchedVideoBtnEl = document.getElementById("watched-video-btn")
 
-document.addEventListener("click", function(e){
-    if(e.target.id === "watch-count-btn") {
-        addNewVideo()
-    }
+watchedVideoBtnEl.addEventListener("click", function(){
+    totalWatched++
+    console.log(`You watched a new video :) Total watched: ${totalWatched}`)
+    document.getElementById("videos-watched-el").innerText = totalWatched
 })
-
-function addNewVideo(){
-    watchCount++
-    console.log(`You watched a new video :) Total watched: ${watchCount}`)
-    watchCountEl.innerText = watchCount
-}
