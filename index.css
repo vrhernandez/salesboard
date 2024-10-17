@@ -16,6 +16,7 @@ body {
     margin: auto;
 }
 
+/***HEADINGS***/
 h1 {
     font-size: 48px;
 
@@ -26,6 +27,8 @@ h2 {
     font-size: 30px;
 }
 
+/***MAIN***/
+/**TRACKED PROGRESS**/
 .tracker {
     display: flex;
     justify-content: space-around;
@@ -48,6 +51,7 @@ h2 {
     margin:auto;
 }
 
+/**TIMER**/
 .timer {
     display: flex;
     justify-content: center;
@@ -58,6 +62,7 @@ h2 {
     margin: 23px;
 }
 
+/**BUTTONS**/
 .reward-btn {
     background-color: #9E4770;
 
@@ -68,6 +73,7 @@ h2 {
     margin: 5px;
 }
 
+/**CURRENT PROGRESS**/
 .progress-label {
     font-family: Poppins;
     font-size: 20px;
@@ -85,6 +91,7 @@ h2 {
     margin: auto;
 }
 
+/**WATCHED SECTION**/
 .watched {
     display: flex;
     justify-content: space-between;
