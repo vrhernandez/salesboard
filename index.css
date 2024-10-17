@@ -5,7 +5,9 @@
 body {
     text-align: center;
     background: #252525;
+    font-family: "Poppins", sans-serif;
 }
+
 
 .conatiner {
     color:white;
@@ -73,6 +75,8 @@ h2 {
     margin: 5px;
 }
 
+
+
 /**CURRENT PROGRESS**/
 .progress-label {
     font-family: Poppins;
@@ -84,7 +88,7 @@ h2 {
 
 .progress-display {
     background: #44354A;
-
+  
     height: 40px;
 
     border-radius: 50px;
@@ -93,6 +97,7 @@ h2 {
 
 /**WATCHED SECTION**/
 .watched {
+
     display: flex;
     justify-content: space-between;
 }
@@ -100,6 +105,7 @@ h2 {
 .watched div {
     width: 49%;
 }
+  
 
 .watched-label {
     font-size: 20px;
@@ -109,9 +115,7 @@ h2 {
 
 .watched-display {
     font-size: 20px;
-
     background-color: #44354A;
-
     padding: 8px 0;
     border-radius: 50px;
     margin-top: 10px;
