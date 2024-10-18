@@ -136,43 +136,52 @@ h2 {
 
     h1 {
         position: relative;
-        margin: 0;
+
         font-size: 5rem;
         text-shadow: 0 0 10px #252525;
+
+        margin: 0;
     }
     
     h1:before {
         content: "";
         position: absolute;
-        height: 1rem;
-        width: 50%;
-        border-radius: 10px;
-        background-color: #9E4770;
         left: 4rem;
         bottom: 2.25rem;
+
+        height: 1rem;
+        width: 50%;
+
+        border-radius: 10px;
+
         z-index: -1;
     }
 
     /**MAIN**/
     main {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
-        position: relative;
+
         margin: 0 1rem;
     }
 
     .conatiner {
         width: 90%;
+
         margin: 0 5%;
     }
 
     /*HEADINGS*/
     h2 {
-        margin: 0;
-        font-size: 3rem;
         position: relative;
+
+        font-size: 3rem;
         text-align: left;
+
         width: 100%;
+
+        margin: 0;
     }
 
     .progress-label,
@@ -183,6 +192,7 @@ h2 {
     /*WEEKLY PROGRESS*/
     .display {
         width: 50%;
+
         margin-bottom: 5rem;
     }
 
@@ -196,8 +206,10 @@ h2 {
         position: absolute;
         top: 0;
         right: 0;
-        padding: 2rem;
+
         background-color: #44354A;
+
+        padding: 2rem;
         border-radius: 20px;
     }
 
@@ -213,6 +225,7 @@ h2 {
 
     .watched {
         width: 100%;
+
         margin-top: 2rem;
     }
 }
