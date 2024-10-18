@@ -190,6 +190,11 @@ h2 {
         font-size: 25px;
     }
 
+    .progress-label {
+        text-align: left;
+        margin-left: 0.5em;
+    }
+
     /*WEEKLY PROGRESS*/
     .display {
         width: 50%;
@@ -223,10 +228,10 @@ h2 {
         width: 70%;
     }
 
-
     .watched {
-        width: 100%;
+        width: 50%;
 
         margin-top: 2rem;
+        gap: 4rem;
     }
 }
