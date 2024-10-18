@@ -100,7 +100,7 @@ h2 {
 
 .progress-display {
     background: #44354A;
-  
+
     height: 40px;
 
     border-radius: 50px;
@@ -117,7 +117,6 @@ h2 {
 .watched div {
     width: 49%;
 }
-  
 
 .watched-label {
     font-size: 20px;
@@ -131,4 +130,120 @@ h2 {
     padding: 8px 0;
     border-radius: 50px;
     margin-top: 10px;
+}
+
+
+/***DESKTOP***/
+@media screen and (min-width: 1200px) {
+    body {
+        background: #252525;
+        background: conic-gradient(from 45deg, #252525, #2d1420);
+    }
+
+    /**HEADER**/
+    header {
+        text-align: left;
+    }
+
+    h1 {
+        position: relative;
+
+        font-size: 5rem;
+        text-shadow: 0 0 10px #252525;
+
+        margin: 0;
+    }
+    
+    h1:before {
+        content: "";
+        position: absolute;
+        left: 4rem;
+        bottom: 2.25rem;
+
+        background-color: #9E4770;
+
+        height: 1rem;
+        width: 50%;
+
+        border-radius: 10px;
+
+        z-index: -1;
+    }
+
+    /**MAIN**/
+    main {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: 0 1rem;
+    }
+
+    .conatiner {
+        width: 90%;
+
+        margin: 0 5%;
+    }
+
+    /*HEADINGS*/
+    h2 {
+        position: relative;
+
+        font-size: 3rem;
+        text-align: left;
+
+        width: 100%;
+
+        margin: 0;
+    }
+
+    .progress-label,
+    .watched-label {
+        font-size: 25px;
+    }
+
+    .progress-label {
+        text-align: left;
+        margin-left: 0.5em;
+    }
+
+    /*WEEKLY PROGRESS*/
+    .display {
+        width: 50%;
+
+        margin-bottom: 5rem;
+    }
+
+    .tracker-bubble {
+        width: 200px;
+        height: 40px;
+    }
+
+    /*ACTIONS BOX*/
+    .actions {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        background-color: #44354A;
+
+        padding: 2rem;
+        border-radius: 20px;
+    }
+
+    /*PROGRESS TOTALS*/
+    .total-progress {
+        width: 100%;
+    }
+
+    .progress-item {
+        width: 70%;
+    }
+
+    .watched {
+        width: 50%;
+
+        margin-top: 2rem;
+        gap: 4rem;
+    }
 }
