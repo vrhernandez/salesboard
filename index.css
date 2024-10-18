@@ -66,13 +66,25 @@ h2 {
 
 /**BUTTONS**/
 .reward-btn {
-    background-color: #9E4770;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    width: inherit;
 
-    display: inline-block;
+    div {
+        width: 50%;
+        padding: 0 5px;
+    }
 
-    padding: 15px 35px;
-    border-radius: 10px;
-    margin: 5px;
+    button {
+        color: gold;
+        background-color: #9E4770;
+        padding: 15px 35px;
+        border-radius: 10px;
+        width: 100%;
+        font-family: inherit;
+    }
+
 }
 
 
