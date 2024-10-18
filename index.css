@@ -120,3 +120,92 @@ h2 {
     border-radius: 50px;
     margin-top: 10px;
 }
+
+
+/***DESKTOP***/
+@media screen and (min-width: 1200px) {
+    body {
+        background: #252525;
+        background: conic-gradient(from 45deg, #252525, #2d1420);
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin: 0 1rem;
+    }
+
+    .conatiner {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    h1 {
+        position: relative;
+        margin: 0;
+        font-size: 5rem;
+        text-shadow: 0 0 10px #252525;
+    }
+    
+    h1:before {
+        content: "";
+        position: absolute;
+        height: 1rem;
+        width: 50%;
+        border-radius: 10px;
+        background-color: #9E4770;
+        left: 4rem;
+        bottom: 2.25rem;
+        z-index: -1;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 3rem;
+        position: relative;
+        text-align: left;
+        width: 100%;
+    }
+
+    .display {
+        width: 50%;
+        margin-bottom: 5rem;
+    }
+
+    .tracker-bubble {
+        width: 200px;
+        height: 40px;
+    }
+    
+    .total-progress {
+        width: 100%;
+    }
+
+    .progress-item {
+        width: 70%;
+    }
+
+    .actions {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+        background-color: #44354A;
+        border-radius: 20px;
+    }
+
+    .watched {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .progress-label,
+    .watched-label {
+        font-size: 25px;
+    }
+}
