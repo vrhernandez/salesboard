@@ -137,7 +137,7 @@ h2 {
 
 
 /***DESKTOP***/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1250px) {
     body {
         background: #252525;
         background: conic-gradient(from 45deg, #252525, #2d1420);
