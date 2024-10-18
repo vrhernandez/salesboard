@@ -70,14 +70,14 @@ h2 {
     margin: 0;
     justify-content: space-between;
     width: inherit;
-
+    
     div {
         width: 50%;
-        padding: 0 5px;
+        padding: 1px;
     }
 
     button {
-        color: gold;
+        color: #FFDF86;
         background-color: #9E4770;
         padding: 15px 35px;
         border-radius: 10px;
