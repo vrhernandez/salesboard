@@ -6,6 +6,20 @@ const watchedVideoBtnEl = document.getElementById("watched-video-btn")
 
 watchedVideoBtnEl.addEventListener("click", function(){
     totalWatched++
-    console.log(`You watched a new video :) Total watched: ${totalWatched}`)
+    taskCompletionNotif("video", totalWatched)
     document.getElementById("videos-watched-el").innerText = totalWatched
 })
+
+//task completion modal
+function taskCompletionNotif(taskCompleted, total) {
+    const taskCompletionNotifModal = document.getElementById("taskCompletionNotification")
+
+    if (taskCompleted === "video") {
+        taskCompletionNotifModal.textContent = `You watched a new video! Total videos watched: ${total}`
+    }
+
+    taskCompletionNotifModal.style.display = "flex"
+    setTimeout(() => {
+        taskCompletionNotifModal.style.display = "none"
+    }, 5000)
+}
