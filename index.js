@@ -10,12 +10,23 @@ watchedVideoBtnEl.addEventListener("click", function(){
     document.getElementById("videos-watched-el").innerText = totalWatched
 })
 
-//task completion modal
-function taskCompletionNotif(taskCompleted, total) {
-    const taskCompletionNotifModal = document.getElementById("taskCompletionNotification")
+//project completed
+let totalProjects = 0
+const finishedProjectBtnEl = document.getElementById("finished-project-btn")
 
-    if (taskCompleted === "video") {
+finishedProjectBtnEl.addEventListener("click", function(){
+    totalProjects++
+    taskCompletionNotif("project", totalProjects)
+})
+
+//task completion modal
+function taskCompletionNotif(task, total) {
+    const taskCompletionNotifModal = document.getElementById("task-completion-notification")
+
+    if (task === "video") {
         taskCompletionNotifModal.textContent = `You watched a new video! Total videos watched: ${total}`
+    } else if (task === "project") {
+        taskCompletionNotifModal.textContent = `You completed a new project! Total projects completed: ${total}`
     }
 
     taskCompletionNotifModal.style.display = "flex"
