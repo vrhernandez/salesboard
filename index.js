@@ -2,7 +2,7 @@
 const watchedVideos = []
 let watchedToday = 0
 let totalWatched = 0
-let projectsCompleted = 0
+let totalProjects = 0
 
 const watchedVideoBtnEl = document.getElementById("watched-video-btn")
 const projectCompleteBtnEl = document.getElementById("project-complete-btn")
@@ -14,26 +14,17 @@ watchedVideoBtnEl.addEventListener("click", function(){
     watchedToday++
     totalWatched++
     taskCompletionNotif("video", totalWatched)
-    document.getElementById("videos-watched-el").innerText = totalWatched
     document.getElementById("watched-today").innerText = watchedToday
     document.getElementById("videos-watched").innerText = totalWatched
-    overallProgLabelEl.innerText = `Overall Progress - ${totalWatched+projectsCompleted}`
+    overallProgLabelEl.innerText = `Overall Progress - ${totalWatched+totalProjects}`
     document.getElementById("overall-progress").innerText += "⏩"
 })
 
 projectCompleteBtnEl.addEventListener("click", function(){
-    projectsCompleted++
-    document.getElementById("total-projects").innerText = projectsCompleted
-    overallProgLabelEl.innerText = `Overall Progress - ${totalWatched+projectsCompleted}`
-    document.getElementById("overall-progress").innerText += "🏅"
-})
-
-//project completed
-let totalProjects = 0
-const finishedProjectBtnEl = document.getElementById("project-complete-btn")
-
-finishedProjectBtnEl.addEventListener("click", function(){
     totalProjects++
+    document.getElementById("total-projects").innerText = totalProjects
+    overallProgLabelEl.innerText = `Overall Progress - ${totalWatched+totalProjects}`
+    document.getElementById("overall-progress").innerText += "🏅"
     taskCompletionNotif("project", totalProjects)
 })
 
