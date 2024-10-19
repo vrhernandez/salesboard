@@ -64,13 +64,23 @@ h2 {
     margin: 23px;
 }
 
+.select-icon {
+    color: #fff;
+
+    &:hover {
+        color: #FFDF86;
+
+        cursor: pointer;
+    }
+}
+
 /**BUTTONS**/
 .reward-btns {
     display: flex;
     margin: 0;
     justify-content: space-between;
     width: inherit;
-    
+
     .div-fifty {
         width: 50%;
         padding: 5px;
@@ -85,10 +95,21 @@ h2 {
         font-family: inherit;
         font-weight: bold;
         height: 100%;
+        border: none;
+
+        &:hover {
+            background-color: #FFDF86;
+            color: #9E4770;
+
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
     }
-
 }
-
 
 
 /**CURRENT PROGRESS**/
@@ -111,7 +132,6 @@ h2 {
 
 /**WATCHED SECTION**/
 .watched {
-
     display: flex;
     justify-content: space-between;
 }
