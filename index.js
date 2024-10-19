@@ -12,7 +12,7 @@ watchedVideoBtnEl.addEventListener("click", function(){
 
 //project completed
 let totalProjects = 0
-const finishedProjectBtnEl = document.getElementById("finished-project-btn")
+const finishedProjectBtnEl = document.getElementById("project-complete-btn")
 
 finishedProjectBtnEl.addEventListener("click", function(){
     totalProjects++
