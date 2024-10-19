@@ -135,6 +135,22 @@ h2 {
     margin-top: 10px;
 }
 
+/***MODAL***/
+.task-completion-notification {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    color: #252525;
+    font-weight: bold;
+
+    background-color: #FFDF86;
+
+    padding: 2rem;
+    border-radius: 8px 8px 0 8px;
+}
+
 
 /***DESKTOP***/
 @media screen and (min-width: 1250px) {
